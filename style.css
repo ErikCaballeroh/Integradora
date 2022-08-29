@@ -1,0 +1,210 @@
+/* ---------- Estilos generales ---------- */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0;
+}
+
+
+
+/* ---------- Encabezado ---------- */
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.877);
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@keyframes turi-ipipip {
+    0%{
+
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.logo__thumbnail {
+    width: 45px;
+    animation: turi-ipipip 4s linear infinite;
+    animation-delay: 500ms;
+    position: relative;
+}
+
+.logo__h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'DynaPuff', cursive;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.code {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.code__thumbnail {
+    width: 70px;
+}
+
+.encabezado {
+    background-image: linear-gradient( 135deg, rgba(44, 29, 77, 0.4) 10%, rgba(109, 70, 136, 0.4) 100%), url(img/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 90vh;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info__centrar {
+    height: 400px;
+}
+
+.links {
+    color: #fff;
+    list-style: none;
+}
+
+.info__h2 {
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.links__item {
+    color: #fff;
+    text-align: right;
+    font-size: 1.5vw;
+    font-weight: 300;
+
+}
+
+
+.links__enlace {
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+}
+
+.links__enlace:hover {
+    border-bottom: 1px solid rgba(255, 255, 255);
+    transition: all .3s ease-in;
+    font-size: 1.55vw;
+}
+
+.links__enlace:visited {
+    color: #fff;
+}
+
+.icon {
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+/* ---------- Menu ---------- */
+
+.navegacion {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 400px;
+    border-radius: 4px;
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---------- Main ---------- */
+
+.actividades {
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.articulo {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+}
+
+.articulo__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo__thumbnail {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.articulo__h2 {
+    margin: 20px 0;
+    font-size: 3em;
+    color: rgb(70, 69, 150);
+}
+
+.articulo__p {
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.articulo__enlace {
+    color: rgb(119, 139, 255);
+    text-decoration: none;
+}
+
+.articulo__enlace:hover {
+    color: rgb(105, 122, 218);
+    text-decoration: underline;
+    transition: all .2s ease-in;
+}
+
+.articulo__item {
+    margin-left: 1.8vw;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 2px;
+}
